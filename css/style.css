@@ -1,0 +1,355 @@
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+.masthead-wrapper {
+  padding: 30px;
+}
+.container {
+  width: 1600px;
+  margin: auto;
+}
+.mastheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: var(--primary-font-stack);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--aqua-color);
+  margin-left: 330px;
+  text-decoration: none;
+}
+
+.logo span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  margin-right: 330px;
+  margin-top: 10px;
+}
+.nav-item {
+  display: inline-block;
+}
+.nav-link {
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--aqua-color);
+  display: block;
+  padding-right: 55px;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--orange-color);
+  border-color: var(--orange-color);
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 128px;
+}
+.hero-title {
+  font-family: var(--accent-font-stack);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--main-font-color);
+  padding-bottom: 22px;
+}
+
+.hero-caption {
+  font-family: var(--primary-font-stack);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+}
+
+.hero-caption::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.hero-main-info {
+  display: flex;
+  margin-left: 200px;
+  justify-content: center;
+  margin-top: 111px;
+}
+
+.hero-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-container-list {
+  margin-bottom: 100px;
+}
+
+.main-container-icons {
+  display: block;
+  flex-basis: 80px;
+}
+
+.main-info-images {
+  width: 32px;
+  height: 32px;
+  margin-left: -49px;
+  display: flex;
+}
+.main-info-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 20px;
+  margin-top: -20px;
+  display: block;
+}
+.main-info-text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 50px;
+  margin: auto;
+  display: block;
+  /* border: 1px solid orange; */
+}
+
+.team-wrapper {
+}
+.container-section-team {
+}
+.section-header {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 92px;
+}
+.section-header-caption {
+  font-family: var(--accent-font-stack);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--main-font-color);
+  display: block;
+  margin-bottom: 23px;
+}
+.section-header-title {
+  font-family: var(--primary-font-stack);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  display: block;
+}
+
+.section-header-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  display: block;
+  margin: 42px auto;
+}
+
+.section-header-text {
+  font-family: var(--secondary-font-stack);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  width: 941px;
+  margin: auto;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item {
+  flex: 0 0 30%;
+}
+.team-card {
+  background-color: #95e1d3;
+  margin-left: 30px;
+}
+.team-card-content {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.team-card-content::after {
+  content: "";
+  opacity: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.89) 0%,
+    rgba(243, 129, 129, 0.89) 100%
+  );
+  transition: opacity 0.4s linear;
+}
+
+.team-card:hover .team-card-content {
+  transform: translate(-15px, -15px);
+}
+
+.team-card:hover .team-card-content::after {
+  opacity: 1;
+}
+
+.team-card:hover .team-card-icons {
+  opacity: 1;
+}
+
+.team-card-icons a {
+  padding: 15px;
+}
+
+.team-card-icons {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  display: flex;
+}
+.team-card-icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  cursor: pointer;
+}
+
+.team-card-icon:hover {
+  background-color: #95e1d3;
+}
+
+.facebook-icon {
+  content: url("../img/social icons/facebook_668.svg");
+}
+.twitter-icon {
+  content: url("../img/social icons/twitter_666.svg");
+}
+.pinterest-icon {
+  content: url("../img/social icons/pinterest_669.svg");
+}
+.instagram-icon {
+  content: url("../img/social icons/instagram_665.svg");
+}
+.team-card-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 31px 0px;
+  background-color: #ffffff;
+}
+.team-card-name {
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  display: block;
+}
+.team-card-pos {
+  font-family: var(--secondary-font-stack);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  display: block;
+}
+
+.mastfooter {
+}
+.footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.footer-licence {
+  margin: auto 30px;
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--main-font-color);
+}
+.footer-licence-author {
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #f38181;
+}
+
+.email-send {
+  width: 230px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
+
+.button-subscribe {
+  width: 230px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  background-color: #95e1d3;
+}

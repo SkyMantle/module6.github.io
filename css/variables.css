@@ -1,0 +1,18 @@
+:root {
+	/* имя переменной, для использования функция var() */
+	--main-font-color:#333333;
+	--aqua-color: #95e1d3;
+	--orange-color:#f38181;
+	--yellow-color:#fce38a;
+	
+	/* переманная для шрифтов */
+	--main-font-stack: 'Montserrat', sans-serif;
+	--accent-font-stack:'Kaushan Script', cursive;
+	--secondary-font-stack: 'Roboto', sans-serif;
+
+	/* переменная для размера шрифтов */
+	--default-font-size: 16px;
+	--default-line-hight:1.5; 
+
+
+}
